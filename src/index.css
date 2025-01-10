@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');/* Global styles */
+
+:root {
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --black: #393d3f;
+  --white: #fdfaff;
+  --tan: #c6c5b9;
+  --light: #62929e;
+  --dark: #546a7b;
+
+  color-scheme: light dark;
+  color: var(--white);
+  background-size: 125% 125%;
+  background: linear-gradient(133deg, var(--dark), var(--light), var(--dark)) center fixed;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 16px;
+}
+
+.italic-text {
+  font-style: italic;
+}

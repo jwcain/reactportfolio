@@ -1,0 +1,27 @@
+.tag {
+    padding: 6px;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 6px;
+    font-size: 14px;
+    font-style: italic;
+    height: min-content;
+    width: max-content;
+}
+
+.tags {
+    align-items: start;
+    justify-content: flex-end;
+    width: min-content;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .tag {
+        font-size: 10px;
+    }
+}
