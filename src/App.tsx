@@ -1,8 +1,7 @@
 import './App.css'
 import {Tab, TabGroup, TabList, TabPanel, TabPanels} from "@headlessui/react";
 import ExperienceCard from "./components/ExperienceCard/ExperienceCard.tsx";
-import TextLoader from "./components/TextLoader/TextLoader.tsx";
-import {Experience, Project, Recipe} from "./Types.ts";
+import {Biography, Experience, Project, Recipe} from "./Types.ts";
 import JSONLoader from "./components/JSONLoader/JSONLoader.tsx";
 import RecipeCard from "./components/RecipeCard/RecipeCard.tsx";
 import ProjectCard from "./components/ProjectCard/ProjectCard.tsx";
@@ -14,13 +13,13 @@ function App() {
     <div className="col">
         <TabGroup className={'tab-group'}>
             <div className="">
-                <div className="bio">
-                    <h1 className={''}>Justin W Cain</h1>
-                    <div className={'bio-content'}>
-                        <TextLoader path={'/content/bio.txt'}/>
-                    </div>
-                    <CopyButton textToCopy={'contact@justinwcain.com'} />
-                </div>
+                <JSONLoader<Biography> paths={['/reactportfolio//content/experience/bio.json']} render={ (bio) =>
+                    (<div className="bio">
+                        <h1 className={''}>{bio.name}</h1>
+                        <div className={'bio-content'}>{bio.description} </div>
+                        <CopyButton textToCopy={bio.email} />
+                    </div>)
+                }/>
                 <div className="tab-holder centered">
                     <TabList className="tab-buttons">
                         <Tab className="tab">Experience</Tab>

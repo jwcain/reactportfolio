@@ -35,3 +35,9 @@ export type Recipe = {
     description: string,
     steps: RecipeStep[]
 }
+
+export type Biography = {
+    name: string,
+    description: string,
+    email: string,
+}

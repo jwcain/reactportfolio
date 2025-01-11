@@ -33,7 +33,7 @@ type JSONLoaderProps<T> = {
                  setData(results as T[]);
              } catch (err) {
                  console.error(err);
-                 setError('Failed to load JSON data.');
+                 setError('Failed to load JSON data. ' +paths[0]);
              } finally {
                  setLoading(false);
              }
