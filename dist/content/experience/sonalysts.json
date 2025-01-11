@@ -1,0 +1,14 @@
+{
+  "title": "Software Analyst",
+  "employer": "Sonalysts, Inc",
+  "location": "Remote",
+  "description": "Brought Black Horizon from prototype to product. Black Horizon is a training simulator for satellite operations an orbital mechanics, deployed in classrooms for the US Space & Air Forces.",
+  "date": "June 2020 - September 2022",
+  "details": [
+    "Served as Tech Lead, contributing to team expansion from 2 to 10+ developers and mentoring new members on coding best practices, system architecture, and design principles",
+    "Reduced content generation time from 30 days to 3 days, utilizing advanced C# features like Attributes, Reflection, and Anonymous Functions",
+    "Developed a specialized physics engine API, reducing code base size by 30% and enabling automatic unit testing",
+    "Designed several modular software systems, consistently delivering on time and under budget, securing multiple contract renewals totaling over 5 million dollars from the US government",
+    "Trained for and maintained a Secret level security clearance."
+  ]
+}

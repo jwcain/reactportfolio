@@ -1,0 +1,12 @@
+{
+  "title": "Hexquisite",
+  "description": "A calming Hexagonal Sliding Block Puzzle Game. Custom rotation and collision code.",
+  "links": [
+    {
+      "url": "https://jwcain.github.io/Hexquisite/",
+      "name": "Play Now",
+      "icon": ""
+    }
+  ],
+  "tags": ["Unity", "C#"]
+}
