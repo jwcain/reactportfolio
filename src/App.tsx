@@ -34,10 +34,10 @@ function App() {
                 <TabPanel className="card-list">
                     <JSONLoader<Experience>
                     paths={[
-                    '/content/experience/freelance2024.json',
-                    '/content/experience/sonalysts.json',
-                    '/content/experience/coneydog.json',
-                    '/content/experience/huskygames.json',
+                    '/reactportfolio//content/experience/freelance2024.json',
+                    '/reactportfolio//content/experience/sonalysts.json',
+                    '/reactportfolio//content/experience/coneydog.json',
+                    '/reactportfolio//content/experience/huskygames.json',
                     ]}
                     render={(experience: Experience) => (<ExperienceCard experience={experience}/>)}
                     />
@@ -45,13 +45,13 @@ function App() {
                 <TabPanel className="card-list">
                     <JSONLoader<Project>
                     paths={[
-                    '/content/project/hexquisite.json',
-                    '/content/project/geneticeuchre.json',
-                    '/content/project/flaskportfolio.json',
-                    '/content/project/affinityforquotes.json',
-                    '/content/project/agent967.json',
-                    '/content/project/astrocide.json',
-                    '/content/project/thepathyouchose.json',
+                    '/reactportfolio//content/project/hexquisite.json',
+                    '/reactportfolio//content/project/geneticeuchre.json',
+                    '/reactportfolio//content/project/flaskportfolio.json',
+                    '/reactportfolio//content/project/affinityforquotes.json',
+                    '/reactportfolio//content/project/agent967.json',
+                    '/reactportfolio//content/project/astrocide.json',
+                    '/reactportfolio//content/project/thepathyouchose.json',
                     ]}
                     render={(project: Project) => (<ProjectCard project={project}/>)}
                     />
@@ -59,33 +59,33 @@ function App() {
                 <TabPanel className="card-list">
                     <JSONLoader<Recipe>
                     paths={[
-                    '/content/recipe/pbcookie.json',
-                    '/content/recipe/cheesecake_base.json',
+                    '/reactportfolio//content/recipe/pbcookie.json',
+                    '/reactportfolio//content/recipe/cheesecake_base.json',
                     ]}
                     render={(recipe: Recipe) => (<RecipeCard recipe={recipe}/>)}
                     />
                 </TabPanel>
                 <TabPanel className="card-list">
                     <ImageGallery images={[
-                        '/content/gallery/100.jpg',
-                        '/content/gallery/200.jpg',
-                        '/content/gallery/201.jpg',
-                        '/content/gallery/300.jpg',
-                        '/content/gallery/301.jpg',
-                        '/content/gallery/400.jpg',
-                        '/content/gallery/401.jpg',
-                        '/content/gallery/402.jpg',
-                        '/content/gallery/403.jpg',
-                        '/content/gallery/404.jpg',
-                        '/content/gallery/500.jpg',
-                        '/content/gallery/501.jpg',
-                        '/content/gallery/502.jpg',
-                        '/content/gallery/504.jpg',
-                        '/content/gallery/505.jpg',
-                        '/content/gallery/1002.jpg',
-                        '/content/gallery/1003.jpg',
-                        '/content/gallery/1004.jpg',
-                        '/content/gallery/1005.jpg',
+                        '/reactportfolio//content/gallery/100.jpg',
+                        '/reactportfolio//content/gallery/200.jpg',
+                        '/reactportfolio//content/gallery/201.jpg',
+                        '/reactportfolio//content/gallery/300.jpg',
+                        '/reactportfolio//content/gallery/301.jpg',
+                        '/reactportfolio//content/gallery/400.jpg',
+                        '/reactportfolio//content/gallery/401.jpg',
+                        '/reactportfolio//content/gallery/402.jpg',
+                        '/reactportfolio//content/gallery/403.jpg',
+                        '/reactportfolio//content/gallery/404.jpg',
+                        '/reactportfolio//content/gallery/500.jpg',
+                        '/reactportfolio//content/gallery/501.jpg',
+                        '/reactportfolio//content/gallery/502.jpg',
+                        '/reactportfolio//content/gallery/504.jpg',
+                        '/reactportfolio//content/gallery/505.jpg',
+                        '/reactportfolio//content/gallery/1002.jpg',
+                        '/reactportfolio//content/gallery/1003.jpg',
+                        '/reactportfolio//content/gallery/1004.jpg',
+                        '/reactportfolio//content/gallery/1005.jpg',
                     ]}/>
                 </TabPanel>
             </TabPanels>
