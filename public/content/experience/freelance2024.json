@@ -6,7 +6,7 @@
   "date": "February 2023 - Present",
   "details": [
     "Consulted on battery optimization control software, guiding procedures, software development standards, memory management, and debugging practices to enhance developer proficiency.",
-    "Developed web tools combining Rust API with Typescript React, enabling interactive visualization of simulations.",
+    "Developed web tools using Rust API with Typescript React, enabling interactive visualization of simulations.",
     "Engineered AI-driven tools for RPG storytelling, generating world-building content and narrative data to enhance immersion."
  ]
 }
