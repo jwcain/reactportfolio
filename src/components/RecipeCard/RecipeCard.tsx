@@ -12,7 +12,7 @@ export default function RecipeCard({recipe}:RecipeCardProps)
         <div className='card'>
             <TabGroup className={'col max'}>
                 <span className={'title recipe-title centered hr'}>{recipe.title}</span>
-                <div className='flex-row hr'>
+                <div className='flex-row'>
                         <TabList className="recipe-buttons flex-col">
                             <Tab className={'tab small'}>Summary</Tab>
                             <Tab className={'tab small'}>Ingredients</Tab>
@@ -40,17 +40,19 @@ export default function RecipeCard({recipe}:RecipeCardProps)
                         </TabPanel>
                         <TabPanel className="tab-panel">
                             {recipe.steps.map((step, stepIndex) => (
-                                <div key={stepIndex} className={'step col'}>
-                                    <span>{step.description}</span>
-                                    {step.ingredient.length > 0 ?
-                                        (<div className="col">
-                                            {step.ingredient.map((ingredient, ingredientIndex) => (
-                                                <span key={ingredient.name + ingredientIndex}>♦ {ingredient.amount + " " + ingredient.name}</span>
-                                            ))}
-                                        </div>)
-                                        : (<div key={stepIndex}></div>)
-                                    }
-                                    <span className={'step-label hr2'}></span>
+                                <div className={'row centered'}>
+                                    <h1 className={'step-index'}>{stepIndex}</h1>
+                                    <div key={stepIndex} className={'step'}>
+                                        <span>{step.description}</span>
+                                        {step.ingredient.length > 0 ?
+                                            (<div className="col">
+                                                {step.ingredient.map((ingredient, ingredientIndex) => (
+                                                    <span key={ingredient.name + ingredientIndex}>♦ {ingredient.amount + " " + ingredient.name}</span>
+                                                ))}
+                                            </div>)
+                                            : (<div key={stepIndex}></div>)
+                                        }
+                                    </div>
                                 </div>
                             ))}
                         </TabPanel>

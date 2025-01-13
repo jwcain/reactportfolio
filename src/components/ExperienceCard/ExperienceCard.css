@@ -22,7 +22,7 @@
 }
 
 .details {
-    background-color: var(--light);
+    background-color: var(--dark);
     border-radius: 16px;
     display: flex;
     flex-direction: column;

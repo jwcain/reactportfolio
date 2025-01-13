@@ -10,11 +10,11 @@ import ImageGallery from "./components/ImageGallery/ImageGallery.tsx";
 
 function App() {
   return (
-    <div className="col">
+    <div className="col centered">
         <TabGroup className={'tab-group'}>
             <div className="">
                 <JSONLoader<Biography> paths={['/content/experience/bio.json']} render={ (bio) =>
-                    (<div className="bio">
+                    (<div className="bio col">
                         <h1 className={''}>{bio.name}</h1>
                         <div className={'bio-content'}>{bio.description} </div>
                         <CopyButton textToCopy={bio.email} />
@@ -68,18 +68,13 @@ function App() {
                     <ImageGallery images={[
                         '/content/gallery/100.jpg',
                         '/content/gallery/200.jpg',
-                        '/content/gallery/201.jpg',
                         '/content/gallery/300.jpg',
-                        '/content/gallery/301.jpg',
                         '/content/gallery/400.jpg',
-                        '/content/gallery/401.jpg',
+                        '/content/gallery/502.jpg',
                         '/content/gallery/402.jpg',
                         '/content/gallery/403.jpg',
-                        '/content/gallery/404.jpg',
                         '/content/gallery/500.jpg',
                         '/content/gallery/501.jpg',
-                        '/content/gallery/502.jpg',
-                        '/content/gallery/504.jpg',
                         '/content/gallery/505.jpg',
                         '/content/gallery/1002.jpg',
                         '/content/gallery/1003.jpg',
@@ -89,6 +84,9 @@ function App() {
                 </TabPanel>
             </TabPanels>
         </TabGroup>
+        <button className={'to-top-button'} onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
+            <img className={'icon'} src={'/up-double.svg'} alt={'To Top'}/>
+        </button>
     </div>
 
   );

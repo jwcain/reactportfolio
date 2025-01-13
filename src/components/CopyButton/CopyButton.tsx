@@ -1,5 +1,5 @@
 import './CopyButton.css';
-import { useState } from 'react';
+import {useEffect, useState} from 'react';
 
 type CopyButtonProps = {
     textToCopy: string; // Defining the type of the 'textToCopy' prop
@@ -17,11 +17,13 @@ export default function CopyButton({ textToCopy } : CopyButtonProps) {
             console.error('Failed to copy text:', error);
         }
     };
-
+    useEffect(() => {}, [copied]);
     return (
         <div className={'holder'}>
-            <button className={'copy-button'} onClick={handleCopy}>{textToCopy}</button>
-            {copied && <span className={'copied-tag'}>Copied!</span>}
+            <button className={'copy-button row centered'} onClick={handleCopy}>
+                <img className={'icon'} src={copied? '/ok.svg' : 'copy.svg'} alt={'copy icon'}/>
+                {textToCopy}
+            </button>
         </div>
     );
 }

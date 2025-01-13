@@ -4,7 +4,6 @@
     gap: 12px;
     width: 100%;
     max-width: 1000px;
-    padding-bottom: 32px;
 }
 
 .bio {
@@ -31,22 +30,23 @@
     padding: 0;
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+
+
 }
 
 .tab-holder {
     display: flex;
     flex-direction: row;
     gap: 8px;
-    margin-bottom: 8px; /* Space between tabs and content */
-
+    padding-bottom: 10px;
 }
 
 .hr {
-    padding-bottom: 8px;
-    border-bottom: 1px solid var(--tan);
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--accent-light);
 }
 .hr2 {
-    padding-bottom: 8px;
+    padding-bottom: 5px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -65,6 +65,7 @@
     border-radius: 12px;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);  /* Outer shadow */
     max-width: 800px;
+    border: 1px solid var(--black);
 }
 
 button {
@@ -72,8 +73,8 @@ button {
     min-height: 50px;
     width: 100%;
     max-width: fit-content;
-    background-color: var(--tan);
-    color: var(--black);
+    background-color: var(--dark);
+    color: var(--white);
     font-size: 16px;
     font-weight: 800;
     text-align: center;
@@ -82,7 +83,7 @@ button {
     cursor: pointer;
     padding: 6px 10px;
     transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
-
+    outline: none;
 
 }
 
@@ -90,10 +91,10 @@ button.small {
     min-width: 75px;
     min-height: 25px;
     width: 100%;
-    background-color: var(--tan);
-    color: var(--black);
-    font-size: 12px;
-    font-weight: 800;
+    background-color: var(--light);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 600;
 }
 button:hover {
     background-color: var(--light) !important;
@@ -114,7 +115,7 @@ button:hover {
 /* Styling for the selected tab using aria-selected */
 .tab:hover, .tab[aria-selected="true"] {
     background-color: var(--light);
-    color: var(--white);
+    color: var(--accent-light);
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3) ;  /* Outer shadow */
     transform: translateY(2px);
 }
@@ -143,12 +144,10 @@ button:hover {
     width: 100%;
     max-width: 90%;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3) ;  /* Outer shadow */
-    border: 1px solid var(--dark);
+    border: 1px solid var(--black);
 }
 
 .centered {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -174,6 +173,25 @@ button:hover {
     gap: 8px;
 }
 
+.to-top-button {
+    width: 45px;
+    min-width: 35px;
+    height: 35px;
+    min-height: 20px;
+
+    justify-self: center;
+    align-content: center;
+    align-items: center;
+
+    background-color: var(--black);
+    color: var(--light);
+    font-size: 14px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3), 0 0 5px var(--black);
+}
+
+.to-top-button:hover {
+    color: var(--white);
+}
 
 @media (max-width: 768px) {
     body {
@@ -181,8 +199,8 @@ button:hover {
     }
 
     .tab-holder {
-        flex-direction: column; /* Stacks tabs vertically */
-        gap: 4px; /* Reduces gap between elements */
+        flex-direction: column;
+        gap: 4px;
     }
 
     .bio {
@@ -252,6 +270,4 @@ button:hover {
     button {
         font-size: 12px;
     }
-
-
 }

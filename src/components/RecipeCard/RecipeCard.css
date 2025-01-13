@@ -17,7 +17,9 @@
 .max {
     width: 100%;
 }
-
+.step-index {
+    color: var(--light);
+}
 .recipe-buttons {
     gap: 8px;
     flex-wrap: wrap;
@@ -32,13 +34,6 @@
 
 .recipe-buttons button {
     min-width: 100%;
-}
-
-.extension {
-    height: 100%;
-    border-right: 1px solid var(--tan);
-    min-width: 120px;
-    min-height: 120px;
 }
 
 .bottom {

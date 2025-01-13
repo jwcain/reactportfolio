@@ -3,8 +3,6 @@
 :root {
   font-weight: 600;
   line-height: 1.5;
-  margin: 0;
-  padding: 0;
   font-family: "Roboto", sans-serif;
 
   font-synthesis: none;
@@ -12,28 +10,24 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --black: #393d3f;
-  --white: #fdfaff;
-  --tan: #c6c5b9;
-  --light: #62929e;
-  --dark: #546a7b;
+  --black: #1f2029;
+  --white: #ddd8c4;
+  --accent-dark: #6f8996;
+  --accent-light: #fa7921;
+  --light: #4e5d73;
+  --dark: #2a2c41;
 
   color-scheme: light dark;
   color: var(--white);
   background-size: 125% 125%;
-  background: linear-gradient(133deg, var(--dark), var(--light), var(--dark)) center fixed;
+  background: linear-gradient(133deg, var(--black), var(--dark), var(--black)) center fixed;
 }
 
 #root {
-  display: flex;
   flex-direction: column;
-
 }
 
 html, body {
-  height: 100%;
-  margin: 0;
-  padding: 16px;
 }
 
 .italic-text {
